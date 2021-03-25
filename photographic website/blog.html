@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<title>Gallary</title>
+	<style type="text/css">
+      *
+      {
+        margin: 0px;
+        padding: 0px;
+      }
+      body
+      {
+        font-family: 'Poppins', sans-serif;
+      }
+      .nav_bar
+      {
+        color:  black;
+        border-radius: 10px;
+      }
+      .nav_bar:hover
+      {
+        background:black;
+        color: #fff;
+        border-radius: 10px;
+      }
+      .navnar_bg
+      {
+        background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+       .card_img
+      {
+         height: auto; 
+         padding: 10px; 
+         width: 100%;
+         border-radius: 25px;
+      }
+      .socials
+      {
+        text-align: center;
+        word-spacing: 10px;
+        cursor: pointer;
+      }
+      .card_bg
+      {
+        background:#ECECEC;
+        border-radius: 15px;
+        height: 30rem;
+      }
+      footer
+      {
+        background:black;
+        color: #fff;
+        width: 100%;
+      }
+      .fot_text
+      {
+        font-size: 14px;
+        color: gray;
+      }
+      .fo_icon
+      {
+        font-size: 13px;
+        color: #C0C0C0;
+        cursor: pointer;
+      }
+      .fo_icon:hover
+      {
+        color: #fff;
+      }
+      .foter_glass
+      {
+         background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+  </style>
+</head>
+<body>
+
+
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top navnar_bg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa fa-camera" aria-hidden="true"></i> Photography</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+  <li class="nav-item">
+    <a href="index.html"><button class="nav_bar btn">Home</button></a>
+  </li>
+  <li class="nav-item">
+    <a href="aboutus.html"><button class="nav_bar btn">About Us</button></a>
+  </li>
+  <li class="nav-item">
+    <a href="blog.html"><button class="nav_bar btn">Blog</button></a>
+  </li>
+   <li class="nav-item">
+    <a href="gallary.html"><button class="nav_bar btn">Gallary</button></a>
+  </li>
+   <li class="nav-item">
+    <a href="contact.html"><button class="nav_bar btn">Contact</button></a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-xl-3 col-md-6 col-sm-6 mt-4">
+      <div class="card_bg">
+        <img src="https://images.pexels.com/photos/2128181/pexels-photo-2128181.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="..." style="border-radius: 15px 15px 0 0; height: 11rem;">
+        <div class="card-body" style="border-radius: 10px;">
+           <h6 style="font-size: 12px;">Travel</h6>
+           <h6 class="card-title" style="font-weight: 700;">How to Photograph Travel</h6>
+           <p class="card-text" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+           <div class="socials">
+              <i class="fa fa-instagram " aria-hidden="true"></i>
+     <i class="fa fa-facebook " aria-hidden="true"></i>
+     <i class="fa fa-pinterest-p " aria-hidden="true"></i>
+     <i class="fa fa-youtube-play " aria-hidden="true"></i>
+     <i class="fa fa-twitter " aria-hidden="true" ></i>
+     <i class="fa fa-rss " aria-hidden="true"></i>
+            </div>  
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 mt-4">
+
+      <div class="card_bg">
+        <img src="https://images.pexels.com/photos/751689/pexels-photo-751689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="..." style="border-radius: 15px 15px 0 0;  height: 11rem;">
+        <div class="card-body" style="border-radius: 10px;">
+           <h6 style="font-size: 12px;">Wildlife</h6>
+           <h6 class="card-title" style="font-weight: 700;">How to Photograph Wildlife</h6>
+           <p class="card-text" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+           <div class="socials">
+              <i class="fa fa-instagram " aria-hidden="true"></i>
+     <i class="fa fa-facebook " aria-hidden="true"></i>
+     <i class="fa fa-pinterest-p " aria-hidden="true"></i>
+     <i class="fa fa-youtube-play " aria-hidden="true"></i>
+     <i class="fa fa-twitter " aria-hidden="true" ></i>
+     <i class="fa fa-rss " aria-hidden="true"></i>
+            </div>  
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 mt-4">
+
+      <div class="card_bg">
+        <img src="https://images.pexels.com/photos/1230302/pexels-photo-1230302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="..." style="border-radius: 15px 15px 0 0;  height: 11rem; object-fit:cover;">
+        <div class="card-body" style="border-radius: 10px;">
+           <h6 style="font-size: 12px;">Adventure</h6>
+           <h6 class="card-title" style="font-weight: 700;">How to Photograph Adventure</h6>
+           <p class="card-text" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+           <div class="socials">
+              <i class="fa fa-instagram " aria-hidden="true"></i>
+     <i class="fa fa-facebook " aria-hidden="true"></i>
+     <i class="fa fa-pinterest-p " aria-hidden="true"></i>
+     <i class="fa fa-youtube-play " aria-hidden="true"></i>
+     <i class="fa fa-twitter " aria-hidden="true" ></i>
+     <i class="fa fa-rss " aria-hidden="true"></i>
+            </div>  
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 mt-4">
+      
+<div class="card_bg">
+        <img src="https://images.pexels.com/photos/894443/pexels-photo-894443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="..." style="border-radius: 15px 15px 0 0;  height: 11rem; object-fit:cover;">
+        <div class="card-body" style="border-radius: 10px;">
+           <h6 style="font-size: 12px;">Culture</h6>
+           <h6 class="card-title" style="font-weight: 700;">How to Photograph Culture</h6>
+           <p class="card-text" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+           <div class="socials">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+     <i class="fa fa-facebook" aria-hidden="true"></i>
+     <i class="fa fa-pinterest-p " aria-hidden="true"></i>
+     <i class="fa fa-youtube-play " aria-hidden="true"></i>
+     <i class="fa fa-twitter " aria-hidden="true" ></i>
+     <i class="fa fa-rss " aria-hidden="true"></i>
+            </div>  
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<br><br>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12"><br>
+        <div class="foter_glass">
+          
+        
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-3">
+              <h4><i class="fa fa-camera" aria-hidden="true"></i>&nbsp Photography</h4>
+
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Website</h5>
+              <h6 class="fot_text mt-4 fo_icon">Home</h6>
+              <h6 class="fot_text fo_icon">About Us</h6>
+              <h6 class="fot_text fo_icon">Blog</h6>
+              <h6 class="fot_text fo_icon">Gallary</h6>
+              <h6 class="fot_text fo_icon">Contact Us</h6>
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Support</h5>
+                <h6 class="fot_text mt-4 fo_icon">Contact Us</h6>
+                <h6 class="fot_text fo_icon">FAQ</h6>
+                <h6 class="fot_text fo_icon">Download</h6>
+                <h6 class="fot_text fo_icon">Service</h6>
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Subscribe</h5>
+
+                <input type="text" name="" class="form-control mt-4" placeholder="Email Id">
+                <button class="btn btn-light mt-3" style="width: 9rem; border-radius: 50px;">Subscribe</button>
+
+            </div>
+          </div>
+        </div>
+<br><br>
+        <div class="container">
+          <hr>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-2">
+              <center>
+                <i class="fa fa-instagram fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-youtube-play fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-twitter fo_icon" aria-hidden="true" ></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-rss fo_icon" aria-hidden="true"></i>
+              </center>
+            </div>
+            <div class="col-md-4 mt-2">
+              <center><h6 style="font-size: 12px; font-weight: 100;" class="mt-3">&copy; 2021 Photography. All Right Reserved.</h6></center>
+            </div>
+            <div class="col-md-4 mt-2">
+              <center>
+                <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay1.png" >&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay2.png">&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay3.png">&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay4.png">
+              </center>
+            </div>
+          </div>
+        </div>
+<br>
+
+</div><br>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

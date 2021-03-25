@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="gallery.html">
+    <link rel="stylesheet" type="text/css" href="about us.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home</title>
+    <style type="text/css">
+      *
+      {
+        margin: 0px;
+        padding: 0px;
+      }
+      body
+      {
+        font-family: 'Poppins', sans-serif;
+      }
+      .nav_bar
+      {
+        color:  black;
+        border-radius: 10px;
+      }
+      .nav_bar:hover
+      {
+        background:black;
+        color: #fff;
+        border-radius: 10px;
+      }
+      .navnar_bg
+      {
+        background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+      .bg
+      {
+        background-image: url(https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 580px;
+      }
+      .card_img
+      {
+         height: auto; 
+         padding: 10px; 
+         width: 100%;
+         border-radius: 25px;
+      }
+      .modal-content
+      {
+         background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: #fff;
+      }
+      .blur
+      {
+
+         background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: #fff;
+height: 505px;
+      }
+      .fdfdf
+      {
+        color: #0009;
+      }
+      .fdfdf:hover
+      {
+        color: yellow;
+      }
+      footer
+      {
+        background:black;
+        color: #fff;
+        width: 100%;
+      }
+      .fot_text
+      {
+        font-size: 14px;
+        color: gray;
+      }
+      .fo_icon
+      {
+        font-size: 13px;
+        color: #C0C0C0;
+        cursor: pointer;
+      }
+      .fo_icon:hover
+      {
+        color: #fff;
+      }
+      .foter_glass
+      {
+         background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+
+      @media only screen and (max-width: 600px) {
+      .left_img
+      {
+          display: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+   
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top navnar_bg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa fa-camera" aria-hidden="true"></i> Photography</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+  <li class="nav-item">
+    <a href="index.html"><button class="nav_bar btn">Home</button></a>
+  </li>
+  <li class="nav-item">
+    <a href="aboutus.html"><button class="nav_bar btn">About Us</button></a>
+  </li>
+  <li class="nav-item">
+    <a href="blog.html"><button class="nav_bar btn">Blog</button></a>
+  </li>
+   <li class="nav-item">
+    <a href="gallary.html"><button class="nav_bar btn">Gallary</button></a>
+  </li>
+   <li class="nav-item">
+    <a href="contact.html"><button class="nav_bar btn">Contact</button></a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="bg">
+<br>
+  <div class="blur">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="font-size: 40px; margin-top: 115px;">Photographer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         <a href="gallary.html"><button class="btn btn-light" style="border-radius: 50px; width: 12rem;">Gallary</button></a> 
+        </div>
+        <div class="col-md-6">
+          <img src="left.png" style="height: 100%; width: 100%;" class="left_img">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-xl-3 col-md-6 col-sm-6 col-6">
+     
+       <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1495171081156-cc1209ddf6a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80">
+        <img src="https://images.unsplash.com/photo-1495171081156-cc1209ddf6a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/1446311/pexels-photo-1446311.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+        <img src="https://images.pexels.com/photos/1446311/pexels-photo-1446311.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/3454073/pexels-photo-3454073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/3454073/pexels-photo-3454073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+    
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 col-6">
+       
+       <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1512774821169-cf1a17a79668?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80">
+        <img src="https://images.unsplash.com/photo-1512774821169-cf1a17a79668?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1497209483929-d15a3d5afba3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80">
+        <img src="https://images.unsplash.com/photo-1497209483929-d15a3d5afba3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/5967958/pexels-photo-5967958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/5967958/pexels-photo-5967958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/5268384/pexels-photo-5268384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <img src="https://images.pexels.com/photos/5268384/pexels-photo-5268384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1616442343016-f19206a189db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=809&q=80">
+         <img src="https://images.unsplash.com/photo-1616442343016-f19206a189db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=809&q=80" class="card_img popup" alt="image"></a>
+
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 col-6">
+
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1540206395-68808572332f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=281&q=80">
+        <img src="https://images.unsplash.com/photo-1540206395-68808572332f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=281&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1495300146178-72c79633b1fa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80">
+        <img src="https://images.unsplash.com/photo-1495300146178-72c79633b1fa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/3427774/pexels-photo-3427774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/3427774/pexels-photo-3427774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+     
+    </div>
+    <div class="col-xl-3 col-md-6 col-sm-6 col-6">
+      
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1502827413338-5a45f9a611df?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80">
+        <img src="https://images.unsplash.com/photo-1502827413338-5a45f9a611df?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+        <img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/1410232/pexels-photo-1410232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/1410232/pexels-photo-1410232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/1509652/pexels-photo-1509652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/1509652/pexels-photo-1509652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/3575282/pexels-photo-3575282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/3575282/pexels-photo-3575282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+        <a data-fancybox="gallery" href="https://images.pexels.com/photos/1916736/pexels-photo-1916736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <img src="https://images.pexels.com/photos/1916736/pexels-photo-1916736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card_img popup" alt="image"></a>
+
+    </div>
+  </div>
+</div>
+
+<br>
+
+
+<center><a href="gallary.html"><button type="button" class="btn btn-dark" style="border-radius: 50px; width: 12rem;">See All</button></a></center>
+<br><br>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 mt-3">
+      <div class="card text-light" style="border-radius: 25px;">
+      <img src="https://images.unsplash.com/photo-1519220483188-29ad34b93ca9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" style="height: 600px; width: 100%; object-fit: cover; border-radius: 25px;">
+      <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+    <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+    <p class="card-text" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+  </div>
+</div>
+    </div>
+    <div class="col-md-6 mt-3">
+      <h4>Amazing Team Work With other Professional Photographer</h4>
+      <h6 style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua , Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h6>
+
+        <div class="row mt-3">
+          <div class="col-xl-6 col-md-12 mt-3">
+            <img src="https://images.unsplash.com/photo-1613591761556-01126c708410?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" style="height: 435px; width: 100%; object-fit: cover; border-radius: 25px;">
+          </div>
+          <div class="col-xl-6 col-md-12 mt-3">
+            <img src="https://images.unsplash.com/photo-1615921464435-c5987ecd3672?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" style="height: 435px; width: 100%; object-fit: cover; border-radius: 25px;">
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+
+<center><h2>Follow On </h2></center>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-xl-3 col-md-6 col-sm-6 mt-3">
+      <center>
+
+
+
+      <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" style="width: 100%; height: 150px;">
+    <div class="card-foooter shadow">
+     <div class="card-body">
+       <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+     </div>
+   </div>
+
+
+      </center>
+    </div>
+     <div class="col-xl-3 col-md-6 col-sm-6 mt-3">
+       <center>
+        <img src="https://images.unsplash.com/photo-1539122718884-8add90ab0305?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" style="width: 100%; height: 150px;">
+        <div class="card-foooter shadow">
+     <div class="card-body">
+       <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+     </div>
+   </div>
+      </center>
+    </div>
+     <div class="col-xl-3 col-md-6 col-sm-6 mt-3">
+      <center>
+        <img src="https://images.unsplash.com/photo-1544456195-c72e6e33083c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" style="width: 100%; height: 150px;">
+        <div class="card-foooter shadow">
+     <div class="card-body">
+       <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+     </div>
+   </div>
+      </center>
+    </div>
+     <div class="col-xl-3 col-md-6 col-sm-6 mt-3">
+     <center>
+        <img src="https://images.unsplash.com/photo-1478733881689-812ec5f3b464?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=891&q=80" style="width: 100%; height: 150px;">
+        <div class="card-foooter shadow">
+     <div class="card-body">
+       <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+     </div>
+   </div>
+     </center>
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12"><br>
+        <div class="foter_glass">
+          
+        
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-3">
+              <h4><i class="fa fa-camera" aria-hidden="true"></i>&nbsp Photography</h4>
+
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Website</h5>
+              <h6 class="fot_text mt-4 fo_icon">Home</h6>
+              <h6 class="fot_text fo_icon">About Us</h6>
+              <h6 class="fot_text fo_icon">Blog</h6>
+              <h6 class="fot_text fo_icon">Gallary</h6>
+              <h6 class="fot_text fo_icon">Contact Us</h6>
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Support</h5>
+                <h6 class="fot_text mt-4 fo_icon">Contact Us</h6>
+                <h6 class="fot_text fo_icon">FAQ</h6>
+                <h6 class="fot_text fo_icon">Download</h6>
+                <h6 class="fot_text fo_icon">Service</h6>
+            </div>
+            <div class="col-md-3 mt-2">
+              <h4 style="font-size: 15px;">Subscribe</h5>
+
+                <input type="text" name="" class="form-control mt-4" placeholder="Email Id">
+                <button class="btn btn-light mt-3" style="width: 9rem; border-radius: 50px;">Subscribe</button>
+
+            </div>
+          </div>
+        </div>
+<br><br>
+        <div class="container">
+          <hr>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-2">
+              <center>
+                <i class="fa fa-instagram fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-facebook fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-pinterest-p fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-youtube-play fo_icon" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-twitter fo_icon" aria-hidden="true" ></i>&nbsp&nbsp&nbsp&nbsp
+     <i class="fa fa-rss fo_icon" aria-hidden="true"></i>
+              </center>
+            </div>
+            <div class="col-md-4 mt-2">
+              <center><h6 style="font-size: 12px; font-weight: 100;" class="mt-3">&copy; 2021 Photography. All Right Reserved.</h6></center>
+            </div>
+            <div class="col-md-4 mt-2">
+              <center>
+                <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay1.png" >&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay2.png">&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay3.png">&nbsp&nbsp&nbsp
+              <img src="http://zadora.jwsthemeswp.com/wp-content/uploads/2019/06/pay4.png">
+              </center>
+            </div>
+          </div>
+        </div>
+<br>
+
+</div><br>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>
